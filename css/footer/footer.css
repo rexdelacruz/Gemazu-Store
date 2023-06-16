@@ -1,0 +1,149 @@
+.footer {
+    background-color: var(--color-secundario);
+    
+}
+
+.footer__content {
+    
+    padding: 3rem 8rem 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__column--1 {
+    width: 20%;
+}
+
+.footer__column--2 {
+    width: 30%;
+}
+
+.footer__column--2 li{
+    color: white;
+    line-height: 2rem;
+    font-size: 19px;
+    &:hover {
+        color: var(--color-primario);
+        cursor: pointer;
+        
+    }
+    &:active {
+        color: var(--color-primario);
+    }
+
+}
+
+.footer__column--3 {
+    width: 50%;
+}
+
+.footer__column--3 form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer__column--3 h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.name__label {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF2F4;
+    margin-bottom: 0.56rem;
+    margin-top: 0.7rem; 
+    padding: 0.8rem;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.name__label label {
+    font-size: 16px;
+    background-color: #EDF2F4;
+}
+
+.name__label input {
+    border-style: none;
+    background-color: #EDF2F4;
+    font-size: 19px;
+    font-family: var(--montserrat);
+    &:focus{
+        outline: none;
+    }
+}
+
+.footer__column--3 form textarea {
+    background-color: #EDF2F4;
+    border-style: none;
+    border-radius: 7px;
+    padding: 0.8rem;
+    font-family: var(--montserrat);
+    font-size: 19px;
+    &:focus {
+            outline: none;
+        }
+    &::placeholder {
+        font-size: 16px;
+        background-color: #EDF2F4;
+        
+    }
+}
+
+.button__send {
+    background-color: var(--color-primario);
+    color: white;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 17px;
+    width: 20%;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.footer__info {
+    background-color: #8D99AE;
+    width: auto;
+    padding: 1rem 8rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 360px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer__content {
+        padding: 3rem 4rem 1.6rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__column--1 {
+        width: 100%;
+    }
+    .footer__column--2 {
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer__column--3 {
+        width: 100%;
+    }
+    .button__send {
+        width: 100%;
+    }
+    .footer__info {
+        padding: 1rem 3rem;
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+}

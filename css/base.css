@@ -1,0 +1,44 @@
+:root {
+    --montserrat: "Montserrat", "sans-serif";
+
+    --color-primario: #D90429;
+    --color-secundario: #2B2D42;
+    --background-grey: #EBEBEB;
+}
+
+body {
+    font-family: var(--montserrat);
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+/*Buttons*/
+
+.button {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 0.75rem 3rem;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.button_two {
+    background-color: var(--color-primario);
+    color: white;
+    margin: 2rem 0;
+    padding: 0.75rem 3rem;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 360px) {
+    .button_two{
+        margin: 0;
+    }
+}

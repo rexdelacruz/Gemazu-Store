@@ -1,0 +1,32 @@
+.hero {
+    width: auto;
+    background-image: url("/img/hero-banner.jpg");
+    background-repeat: none;
+    background-size: cover;
+    padding: 6.6rem 0;
+}
+
+.hero p {
+    color: white;
+    padding: 2.6rem 0;
+    width: 40%;
+    line-height: normal;
+    font-size: 19px;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 360px) {
+    .hero{
+        text-align: center;
+        background-size: cover;
+    }
+    .hero img{
+        width: 300px;
+    }
+    .hero p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
