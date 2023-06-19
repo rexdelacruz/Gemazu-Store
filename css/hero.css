@@ -1,6 +1,6 @@
 .hero {
     width: auto;
-    /* background-image: url("hero-banner.jpg"); */
+    background-image: url(../img/hero-banner.jpg);
     background-repeat: none;
     background-size: cover;
     padding: 6.6rem 0;
