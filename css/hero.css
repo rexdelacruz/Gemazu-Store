@@ -1,32 +1,32 @@
 .hero {
     width: auto;
     background-image: url(../img/hero-banner.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     padding: 6.6rem 0;
+}
+
+.hero img {
+    width: 300px;
 }
 
 .hero p {
     color: white;
     padding: 2.6rem 0;
-    width: 40%;
+    width: 100%;
     line-height: normal;
-    font-size: 19px;
+    text-align: start;
+    font-size: 16px;
 }
 
-/*MOBILE*/
+/*DESKTOP*/
+@media screen and (min-width: 710px) {
+    .hero img {
+        width: 450px;
+    }
 
-@media screen and (max-width: 376px) {
-    .hero{
-        text-align: center;
-        background-size: cover;
-    }
-    .hero img{
-        width: 300px;
-    }
     .hero p {
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
+        width: 400px;
+        font-size: 19px;
     }
 }
