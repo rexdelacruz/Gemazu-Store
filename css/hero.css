@@ -16,7 +16,7 @@
 
 /*MOBILE*/
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
     .hero{
         text-align: center;
         background-size: cover;
